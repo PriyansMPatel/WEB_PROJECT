@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cycles</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#accordion").accordion({
+          collapsible: true,
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="symbol left">
+        <a href="index.html"
+          ><img src="Images/noshortcuts.png" alt="company_logo" />
+        </a>
+      </div>
+      <!-- Symbol added here -->
+      <ul class="navigation">
+        <li class="nav-list"><a href="index.html">HOME</a></li>
+        <li class="nav-list" onclick="scrollToSection('bicycles')">
+          <a href="WebPages/bicycles.html">BICYCLES</a>
+        </li>
+        <li class="nav-list" onclick="scrollToSection('riders')">
+          <a href="WebPages/riders.html">RIDERS'S ZONE</a>
+        </li>
+        <li class="nav-list">
+          <a href="WebPages/contact.html">CONTACT US</a>
+        </li>
+      </ul>
+
+      <div class="symbol right">
+        <button class="button-3">
+          <a href="WebPages/signup.html">Sign Up</a>
+        </button>
+        <button class="button-3">
+          <a href="WebPages/login.html">Login</a>
+        </button>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <div class="carousel-container">
+      <div class="carousel-slides">
+        <div class="carousel-slide">
+          <img id="slide1" src="./Images/img1.jpeg" alt="Slide 1" />
+        </div>
+        <div class="carousel-slide">
+          <img id="slide2" src="./Images/img2.jpeg" alt="Slide 2" />
+        </div>
+        <div class="carousel-slide">
+          <img id="slide3" src="./Images/img3.jpeg" alt="Slide 3" />
+        </div>
+      </div>
+
+      <button class="carousel-button prev">&laquo;</button>
+      <button class="carousel-button next">&raquo;</button>
+
+      <div class="carousel-dots">
+        <span class="carousel-dot active"></span>
+        <span class="carousel-dot"></span>
+        <span class="carousel-dot"></span>
+      </div>
+    </div>
+    <!-- Sections -->
+
+    <!-- Sec-1 -->
+    <div class="section-header" id="bicylces">
+      <h2 class="section-title">Bicycles</h2>
+      <div class="category-sections">
+        <!-- Category 1: Mountain Bike -->
+        <div class="category">
+          <img src="Images/1.gif" alt="Mountain Bike" />
+          <h3>Mountain Bike</h3>
+          <p>
+            A mountain bike (MTB) or mountain bicycle is a bicycle designed for
+            off-road cycling. Mountain bikes share some similarities with other
+            bicycles, but incorporate features designed to enhance durability.
+          </p>
+        </div>
+
+        <!-- Category 2: Road Bike -->
+        <div class="category">
+          <img src="Images/2.gif" alt="Road Bike" />
+          <h3>Road Bike</h3>
+          <p>
+            Road bikes are bicycles designed to take you as far and as fast as
+            your legs can manage on paved surfaces. Unsurprisingly, the road
+            bike gets its name from the terrain it is designed to be used on –
+            the road.
+          </p>
+        </div>
+
+        <!-- Category 3: Trail Bike -->
+        <div class="category">
+          <img src="Images/3.gif" alt="Trail Bike" />
+          <h3>Trail Bike</h3>
+          <p>
+            A trail is exactly what it sounds like – a mix of a road bike and a
+            mountain bike. The result is a bicycle that's suitable for
+            general-purpose riding over various types of terrain, which is why
+            most trails tend to be used for commuting.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sec-2 -->
+    <div class="section-header" id="services">
+      <h2 class="section-title">Our Services</h2>
+      <div class="category-sections">
+        <!-- Service 1: Emergency Service -->
+        <div class="service">
+          <img
+            src="./Images/bigstock-Cropped-Shot-Of-Male-Mechanic--289810462.jpg"
+            alt="Emergency Service"
+          />
+          <h3>Quick Repair</h3>
+          <p>
+            A mountain bike (MTB) or mountain bicycle is a bicycle designed for
+            off-road cycling. Mountain bikes share some similarities with other
+            bicycles, but incorporate features designed to enhance durability.
+          </p>
+        </div>
+
+        <!-- Service 2: Call Assistance -->
+        <div class="service">
+          <img
+            src="./Images/smiling-call-center-employees-sitting-in-line.jpg"
+            alt="Call Assistance"
+          />
+          <h3>Call Assistance</h3>
+          <p>
+            A mountain bike (MTB) or mountain bicycle is a bicycle designed for
+            off-road cycling. Mountain bikes share some similarities with other
+            bicycles, but incorporate features designed to enhance durability.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sec-3 FAQs -->
+    <div class="section-header" id="faqs">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div id="accordion">
+        <h3>HOW CAN I ORDER MY CYCLE</h3>
+        <div>
+          <p>
+            Click on the ‘Cycles’ or ‘Accessories’ section above and look for
+            what you seek. Found what you want? Click on ‘Add To Cart’ Review
+            what you want to buy by clicking on the little cart icon on the top
+            right of your screen. If you want to remove items, click on the
+            little bin icon to the right of the product you’ve chosen In case
+            the product you want is temporarily unavailable, you can click on
+            Notify Me to know when it’s back in stock! Add your Pin code below
+            to see if the products can be delivered to your location. If not,
+            you can pick up your order from your nearest dealer! Click on
+            Checkout and your shipping details. Finalise your purchase by
+            clicking on the Checkout button!
+          </p>
+        </div>
+        <h3>WHICH IS THE BEST CYCLES BRAND IN INDIA?</h3>
+        <div>
+          <p>
+            Hero Cycles easily takes the crown for being the best cycles brand
+            in India. Ever since its inception in 1956, the proudly Indian brand
+            has grown to become synonymous with cycles and the top manufacturer
+            in India, having produced over 167 million cycles in 2020!
+          </p>
+        </div>
+        <h3>HOW MUCH DOES A HERO CYCLE COST?</h3>
+        <div>
+          <p>
+            There’s no simple answer to that as Hero Cycles has an astoundingly
+            wide range of cycles for you to buy. Hero Cycle price starts from as
+            low as ₹3,000 for kids cycles to over ₹50,000 (built for sports and
+            adventure), and everything in between! Gauge your preferences and
+            requirements, we know we have the perfect cycle for you!
+          </p>
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+        <h3>HOW MANY GEARS ARE THERE IN HERO SPRINT?</h3>
+        <div>
+          <p>
+            The Hero Sprint cycles are equipped with a 21-speed gearbox,
+            offering you unmatched control over the cycle no matter the terrain.
+            That being said, if you’re looking for cycles without gear, you can
+            get them too.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-column">
+            <h4>About Us</h4>
+            <ul class="footer-links">
+              <li><a href="#">Our History</a></li>
+              <li><a href="#">Leadership Team</a></li>
+              <li><a href="#">Our Values</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Support</h4>
+            <ul class="footer-links">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Shipping & Returns</a></li>
+              <li><a href="#">Order Status</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Follow Us</h4>
+            <ul class="footer-social-links">
+              <li>
+                <a href="https://www.meta.com/ca/"
+                  ><img src="./Images/meta.png" alt="Meta"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/"
+                  ><img src="./Images/twitter.png" alt="Twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/"
+                  ><img src="./Images/instagram.png" alt="Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/"
+                  ><img src="./Images/youtube.png" alt="YouTube"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-credits">
+          &copy; 2024 All rights reserved. Made with ❤️
+        </div>
+      </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>

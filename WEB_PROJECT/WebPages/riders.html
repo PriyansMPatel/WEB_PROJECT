@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#tabs").tabs();
+      });
+      $(document).ready(function () {
+        // Hamburger menu functionality
+        $("#hamburger-menu").on("click", function () {
+          $(".nav-menu").slideToggle();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="symbol left">
+        <a href="../index.html"
+          ><img src="../Images/noshortcuts.png" alt=""
+        /></a>
+      </div>
+      <!-- Symbol added here -->
+      <ul>
+        <li class="nav-list"><a href="../index.html">HOME</a></li>
+        <li class="nav-list"><a href="bicycles.html">BICYCLES</a></li>
+        <li class="nav-list"><a href="riders.html">RIDERS'S ZONE</a></li>
+        <li class="nav-list"><a href="contact.html">CONTACT US</a></li>
+      </ul>
+      <div class="symbol right"></div>
+    </header>
+    <section>
+      <!-- Sec-3 -->
+      <div class="section-header" id="riders">
+        <h2 class="section-title">Rider's Zone</h2>
+        <div class="category-rider" id="tabs">
+          <!-- List -->
+          <ul>
+            <li><a href="#tabs-1">Events</a></li>
+            <li><a href="#tabs-2">Blogs</a></li>
+          </ul>
+          <!-- Rider zone 1:  -->
+          <div class="rider" id="tabs-1">
+            <h1>EVENTS</h1>
+            <p>Events helps riders connect.</p>
+            <div class="event_card">
+              <h2>Road Race</h2>
+            <img src="../Images/paralympic cycling-amico.png" height="300" width="300" alt="Event Image 1" />
+            <p class="desc">Road races are competitive cycling events held on paved roads and can vary significantly in distance and terrain. Cyclists compete to complete the designated course in the shortest time. Courses can range from relatively flat to hilly or mountainous, challenging participants' endurance, climbing ability, and tactical skills. Road races often involve strategies such as drafting (riding closely behind another cyclist to reduce wind resistance) and attacks (surges in speed to break away from the pack).</p>
+            </div>
+            <div class="event_card">
+
+              <h2>Mountain Bike Cross-Country (XC):
+              </h2>
+              <img src="../Images/paralympic cycling-bro.png"  height="300" width="300" alt="Event Image 2" />
+              <p class="desc">Mountain bike cross-country races take place on off-road trails, often through rugged and varied terrain such as forests, hills, and mountains. Riders navigate natural obstacles like rocks, roots, and uneven terrain. The courses typically loop through challenging landscapes, requiring both technical skills and physical endurance. Mountain bike XC races can be conducted over a single lap or multiple laps, with competitors aiming to complete the course in the fastest time.</p>
+            </div>
+            <div class="event_card">
+
+              <h2>Track Cycling Pursuit:
+              </h2>
+              <img src="../Images/Road cycling-amico.png"   height="300" width="300" alt="Event Image 3" />
+              <p class="desc">Track cycling pursuit is a timed event held on an indoor velodrome track. The pursuit involves two cyclists starting from opposite sides of the track and racing against the clock. The goal is to complete a set distance (usually 4 kilometers for men and 3 kilometers for women) in the fastest time possible. Riders often use specialized aerodynamic bikes and employ strategic pacing techniques to optimize their speed and endurance throughout the race. The pursuit requires a blend of strength, stamina, and tactical awareness, as riders must manage their effort and maintain a high average speed to achieve the best time.</p>
+            </div>
+          </div>
+
+          <!-- Rider zone 2:  -->
+          <div class="rider" id="tabs-2">
+            <h3>BLOGS</h3>
+            <p>This tab contains recent blog posts.</p>
+            <div class="blog">
+
+              <div class="blog_contain">
+                <img src="../Images/bike parking-rafiki.png" height="300" width="300" alt="Mountain Bike" />
+                <h3>Pedal Power Prose</h3>
+                <p class="blog_desc">
+                  Pedal Power Prose" is a cycling blog dedicated to sharing stories, experiences, and tips from avid cyclists around the world. The blog features engaging narratives of epic rides, bikepacking adventures, and personal cycling journeys. Readers can expect detailed ride reports, gear reviews, and interviews with cycling enthusiasts and professionals. The blog aims to inspire and inform cyclists of all levels, providing practical advice on training, maintenance, and route planning. With a focus on storytelling and community, "Pedal Power Prose" creates a platform where cyclists can connect, learn, and share their passion for two-wheeled adventures.
+                </p>
+              </div>
+              <div class="blog_contain">
+                <img src="../Images/bike travellers-pana.png" height="300" width="300" alt="Mountain Bike" />
+                <h3>CycleCraft Chronicles
+                </h3>
+                <p class="blog_desc">
+                  CycleCraft Chronicles" is a comprehensive cycling blog centered around bike mechanics, maintenance, and technical insights. This blog delves deep into the technical aspects of cycling, offering detailed tutorials on bike repair, tuning, and upgrades. From adjusting derailleurs to overhauling bottom brackets, "CycleCraft Chronicles" provides step-by-step guides with clear instructions and visuals. Additionally, the blog reviews cycling components, tools, and accessories, helping readers make informed decisions about their cycling gear. Whether you're a novice mechanic or a seasoned bike enthusiast, "CycleCraft Chronicles" offers valuable resources to enhance your cycling knowledge and skillset.
+                </p>
+              </div>
+            </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-column">
+            <h4>About Us</h4>
+            <ul class="footer-links">
+              <li><a href="#">Our History</a></li>
+              <li><a href="#">Leadership Team</a></li>
+              <li><a href="#">Our Values</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Support</h4>
+            <ul class="footer-links">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Shipping & Returns</a></li>
+              <li><a href="#">Order Status</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Follow Us</h4>
+            <ul class="footer-social-links">
+              <li>
+                <a href="https://www.meta.com/ca/"
+                  ><img src="../Images/meta.png" alt="Meta"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/"
+                  ><img src="../Images/twitter.png" alt="Twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/"
+                  ><img src="../Images/instagram.png" alt="Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/"
+                  ><img src="../Images/youtube.png" alt="YouTube"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-credits">
+          &copy; 2024 All rights reserved. Made with ❤️
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

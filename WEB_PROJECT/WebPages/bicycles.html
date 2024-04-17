@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bicycles</title>
+  <link rel="stylesheet" href="../CSS/styles.css" />
+  <style>
+    /* Default Styles */
+
+    /* Reset default margin and padding */
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+
+    .header {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .bicycle-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .bicycle {
+      text-align: center;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #333;
+      color: #f2f2f2;
+    }
+
+    .footer a {
+      color: #f2f2f2;
+    }
+
+    /* Media Query for Mobile Devices */
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+      }
+
+      .header {
+        font-size: 1.5rem;
+      }
+
+      .navbar {
+        overflow: visible;
+      }
+
+      .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .bicycle-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+      }
+
+      .footer {
+        font-size: 0.8rem;
+        padding-left: 0px;
+      }
+    }
+
+    /* styles for headaer */
+  </style>
+</head>
+
+<body></body>
+
+</html>
+
+<body>
+  <header>
+    <div class="symbol left">
+      <a href="../index.html"><img src="../Images/noshortcuts.png" alt="" /></a>
+    </div>
+    <!-- Symbol added here -->
+    <ul>
+      <li class="nav-list"><a href="../index.html">HOME</a></li>
+      <li class="nav-list"><a href="bicycles.html">BICYCLES</a></li>
+      <li class="nav-list"><a href="riders.html">RIDERS'S ZONE</a></li>
+      <li class="nav-list"><a href="contact.html">CONTACT US</a></li>
+    </ul>
+    <div class="symbol right"></div>
+  </header>
+
+  <!-- Bicycles Grid Section -->
+  <h2 class="section-title">Bicycle Line Up</h2>
+
+  <section class="bicycle-grid">
+    <div class="bicycle">
+      <img src="../Images/bike1.jpg" alt="Bicycle 1" />
+      <p>Mountain Bike for rugged terrains.</p>
+    </div>
+    <div class="bicycle">
+      <img src="../Images/bike2.jpg" alt="Bicycle 2" />
+      <p>Road Bike for high-speed travel.</p>
+    </div>
+    <div class="bicycle">
+      <img src="../Images/bike3.jpg" alt="Bicycle 3" />
+      <p>Hybrid Bike for versatility.</p>
+    </div>
+    <div class="bicycle">
+      <img src="../Images/bike4.jpg" alt="Bicycle 4" />
+      <p>City Bike for urban environments.</p>
+    </div>
+    <div class="bicycle">
+      <img src="../Images/bike5.jpg" alt="Bicycle 5" />
+      <p>Electric Bike for effortless riding.</p>
+    </div>
+    <div class="bicycle">
+      <img src="../Images/bike6.jpg" alt="Bicycle 6" />
+      <p>Folding Bike for convenient storage.</p>
+    </div>
+    <div class="bicycle">
+      <img src="../Images/bike7.jpg" alt="Bicycle 7" />
+      <p>BMX for stunts and tricks.</p>
+    </div>
+    <div class="bicycle">
+      <img src="../Images/bike8.jpg" alt="Bicycle 8" />
+      <p>Cruiser Bike for relaxed riding.</p>
+    </div>
+    <div class="bicycle">
+      <img src="../Images/bike9.jpg" alt="Bicycle 9" />
+      <p>Recumbent Bike for comfort and aerodynamics.</p>
+    </div>
+    <div class="bicycle">
+      <img src="../Images/bike10.jpg" alt="Bicycle 10" />
+      <p>Touring Bike for long-distance travels.</p>
+    </div>
+    <div class="bicycle">
+      <img src="../Images/bike11.jpg" alt="Bicycle 11" />
+      <p>All-Terrain Bike for diverse environments.</p>
+    </div>
+    <div class="bicycle">
+      <img src="../Images/bike12.jpg" alt="Bicycle 12" />
+      <p>Track Bike for racing on velodromes.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-column">
+          <h4>About Us</h4>
+          <ul class="footer-links">
+            <li><a href="#">Our History</a></li>
+            <li><a href="#">Leadership Team</a></li>
+            <li><a href="#">Our Values</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Order Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <ul class="footer-social-links">
+            <li>
+              <a href="https://www.meta.com/ca/"><img src="../Images/meta.png" alt="Meta" /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/"><img src="../Images/twitter.png" alt="Twitter" /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/"><img src="../Images/instagram.png" alt="Instagram" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/"><img src="../Images/youtube.png" alt="YouTube" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-credits">
+        &copy; 2024 All rights reserved. Made with ❤️
+      </div>
+    </div>
+  </footer>
+</body>
